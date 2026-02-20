@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/navbar.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Salloma Salomão</title>
+    <link rel="stylesheet" href="src/styles/index.css">
+    <link rel="stylesheet" href="src/styles/discografia.css">
+    <link rel="stylesheet" href="src/styles/filmografia.css">
+</head>
+<script src="src/javascript/discografia.js"></script>
+<script src="src/javascript/filmografia.js"></script>
+
+<body>
+
+    <!-- HEADER - src/components/navbar.html -->
+    <div id="navbar-placeholder"></div>
+    <div class="menu-overlay"></div>
+
+    <main>
+        <!-- SEÇÃO HERO - FOTO DE DESTAQUE -->
+        <section id="hero">
+            <img src="src/images/Fotos_Capa/1.jpg" alt="Salloma Salomão" class="hero-image atual">
+            <img src="src/images/Fotos_Capa/2.png" alt="Salloma Salomão" class="hero-image">
+            <img src="src/images/Fotos_Capa/3.png" alt="Salloma Salomão" class="hero-image">
+            <div class="hero-overlay"></div>
+
+            <div class="social-media">
+                <a href="https://www.instagram.com/salloma.salomao/" class="social-link" title="Instagram"
+                    target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/c/SallomaSalom%C3%A3o" class="social-link" title="YouTube"
+                    target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://open.spotify.com/intl-pt/artist/1r9XWqNT4dnqtyEsFqQNYK?nd=1&dlsi=99b6b0a2f55641da"
+                    class="social-link" title="Spotify" target="_blank">
+                    <i class="fa-brands fa-spotify"></i>
+                </a>
+                <a href="https://www.facebook.com/sallomasallomao" class="social-link" title="Facebook" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE TÍTULO -->
+        <section id="hero-text">
+            <h1 class="hero-title">Salloma Salomão</h1>
+            <p class="hero-subtitle">Artista, educador e pesquisador da cultura afro-brasileira</p>
+        </section>
+
+        <!-- SEÇÃO VÍDEO E AGENDA -->
+        <section id="video-agenda">
+            <div class="video-agenda-container">
+                <div class="video-section">
+                    <h2>Trailer Muxima Kumbi</h2>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/QAzJCO5wUg4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="agenda-section">
+                    <h2>Próximos Eventos</h2>
+                    <ul class="agenda-list">
+                        <li class="agenda-item">
+                            <div class="event-date">02 e 06 de Fevereiro</div>
+                            <div class="event-title">Formação para Educadoras – Escola Municipal de Iniciação Artística</div>
+                            <div class="event-location">Tema: Culturas negras e ativismo neopentecostal na escola.</div>
+                        </li>
+                        <li class="agenda-item">
+                            <div class="event-date">Fevereiro a Dezembro</div>
+                            <div class="event-title">Dogma Churrasquinho - Espetáculo contemplado pela Lei de Fomento ao Teatro (Edital Zé Renato – SP).</div>
+                            <div class="event-location">Texto: Vitor Nóvoa | Direção: Maria Thais.</div>
+                        </li>
+                        <li class="agenda-item">
+                            <div class="event-date">Março</div>
+                            <div class="event-title">Sarau Aruanda Mundi – Lançamento - Encontros trimestrais de poesia, música e artes visuais.</div>
+                            <div class="event-location">Apoio à campanha da Associação Brasileira de Artistas do Mundo Digital (ADRAMD).</div>
+                        </li>
+                        <li class="agenda-item">
+                            <div class="event-date">Março</div>
+                            <div class="event-title">Oficina Teatro Negro - Carga horária: 10h</div>
+                            <div class="event-location">Local: Galpão de Folias</div>
+                        </li>
+                        <li class="agenda-item">
+                            <div class="event-date">Março</div>
+                            <div class="event-title">Formação Continuada – Yao</div>
+                            <div class="event-location">Local: SESC Vila Mariana</div>
+                        </li>
+                        <li class="agenda-item">
+                            <div class="event-date">Abril</div>
+                            <div class="event-title">Lançamento do Livro 2 - Pretos, Prussianos, Índios e Caipiras</div>
+                            <div class="event-location">Arte: Cassimano Nanau | Prefácio: Adriana Couto.</div>
+                        </li>
+                        <li class="agenda-item">
+                            <div class="event-date">Maio</div>
+                            <div class="event-title">Videoclipe – “Alegria do Cacau”</div>
+                            <div class="event-location">Álbum Quaresma Festeira</div>
+                        </li>
+                        <li class="agenda-item">
+                            <div class="event-date">Maio</div>
+                            <div class="event-title">Lançamento Álbum – Quaresma Festeira</div>
+                            <div class="event-location">Produção: Salloma Salomão | Arranjos: Fabio Sá.</div>
+                        </li>
+                        <li class="agenda-item">
+                            <div class="event-date">Maio</div>
+                            <div class="event-title">Participação – Missa dos Quilombos - Show de Milton Nascimento</div>
+                            <div class="event-location">Direção: Glauber Miranda.</div>
+                        </li>
+                        <li class="agenda-item">
+                            <div class="event-date">Junho</div>
+                            <div class="event-title">Show de Lançamento – Quaresma Festeira</div>
+                            <div class="event-location">Convidada: Mai Sato</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO BIOTRAJETÓRIAS -->
+        <section id="biotrajetorias">
+            <div class="timeline-container">
+                <h2 class="section-title">Biotrajetórias</h2>
+
+                <div class="biotraj-grid">
+                    <p class="section-paragraph">O “afro caipira” Salomão Jovino da Silva nasce em Passos, Minas Gerais,
+                        em
+                        1961, e ganha ainda
+                        menino o apelido de Salloma, nome que soa afeto e vizinhança. Na infância, entre a família e o
+                        irmão Jansen, abre-se à música, à arte e à consciência racial. Aos 9 anos canta, aos 18 compõe,
+                        e em 1979 sua participação em um festival o convence a seguir criando. Em São Paulo, forma
+                        família, banda, compra flauta, mas aprende que a música não paga o pão. Vira muitos: artesão,
+                        alfaiate, educador, costureiro, professor na FEBEM. Na política cultural dos anos
+                        Erundina,descobre
+                        a prática como escola de pensamento. O racismo e a desigualdade o empurram a
+                        estudar: decide ser doutor e escolhe a História. Faz da aula, da pesquisa e da criação artística
+                        seu modo de existir no mundo. Grava discos, escreve, orienta coletivos, mistura teatro e música.
+                        Entre prêmios e palcos, segue afetando e sendo afetado por sua sensibilidade.</p>
+                    <div>
+                        <p class="section-description">
+                            Navegue pela trajetória artística de Salloma Salomão.
+                            Passe o mouse sobre os círculos brancos e clique nas datas.
+                        </p>
+                        <div id="timeline-spiral-container">
+                            <!-- A espiral será gerada via JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal para exibir informações do ano -->
+                <div id="year-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <h3 id="modal-year">Ano</h3>
+                        <div class="modal-body">
+                            <div class="modal-image-container">
+                                <img id="modal-image" src="" alt="Imagem histórica">
+                            </div>
+                            <div class="modal-text">
+                                <p id="modal-description">Descrição dos acontecimentos do ano.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Discografia -->
+        <section id="discografia" class="content-section">
+            <div class="discografia-player">
+                <div class="album-navigation">
+                    <button class="nav-arrow" id="prevAlbum">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="album-info">
+                        <div class="album-title" id="albumTitle">Carregando...</div>
+                        <div class="album-year" id="albumYear"></div>
+                    </div>
+                    <button class="nav-arrow" id="nextAlbum">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="discografia-content">
+                    <div class="tracks-section">
+                        <div class="loading-spinner" id="loadingSpinner">
+                            <i class="fas fa-spinner fa-spin fa-2x"></i>
+                            <p>Carregando faixas...</p>
+                        </div>
+                        <ul class="track-list" id="trackList"></ul>
+                    </div>
+
+                    <div class="album-artwork">
+                        <div class="artwork-container">
+                            <img class="album-cover" id="albumCover"
+                                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjNzEwMDAwIi8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTUwIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4Ij5TYWxsb21hPC90ZXh0Pgo8L3N2Zz4K"
+                                alt="Capa do Álbum">
+                            <div class="vinyl-overlay"></div>
+                        </div>
+                        <div class="album-details" id="albumDetails">
+                            <p><strong>Formato:</strong> Digital/Físico</p>
+                            <p><strong>Gravadora:</strong> Aruanda Mundi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Seção Filmografia -->
+
+        <section id="filmografia" class="content-section">
+            <!-- O conteúdo será inserido dinamicamente pelo JavaScript -->
+        </section>
+
+        <!-- Seção Bibliografia -->
+        <section id="bibliografia" class="content-section">
+            <h2 class="section-title_2">Bibliografia</h2>
+
+            <div class="content-wrapper">
+                <!-- Seção de Introdução -->
+                <div class="intro-section">
+                    <div class="intro-text">
+                        Salloma Salomão é autor de uma vasta produção bibliográfica que abrange literatura, teatro,
+                        música e pesquisa acadêmica, com foco nas culturas afro-brasileiras e na diáspora africana. Seus
+                        textos analisam a história, a musicalidade e as manifestações culturais negras, destacando temas
+                        como identidade, resistência e contracultura. Combinando rigor acadêmico e poética da cena,
+                        resgata tradições, questiona o poder e propõe narrativas de memória, resistência e inventividade
+                        cultural.
+                    </div>
+                </div>
+
+                <!-- Estatísticas -->
+                <div class="stats-section">
+                    <h2 style="margin-bottom: 15px;">Produção Bibliográfica</h2>
+                    <p style="color: #666;">Panorama da obra literária e acadêmica</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number" id="total-obras">19</span>
+                            <div class="stat-label">Obras</div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">27</span>
+                            <div class="stat-label">Anos de Produção</div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4</span>
+                            <div class="stat-label">Categorias</div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3</span>
+                            <div class="stat-label">Prêmios Literários</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="cta-section">
+                    <a href="bibliografia.html" class="saiba-mais-btn">
+                        <span>Saiba Mais</span>
+                        <i class="fas fa-book-open"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Seção Teatralidades -->
+        <section id="teatralidades" class="content-section">
+            <h2 class="section-title">Teatralidades</h2>
+            <p class="section-description">
+
+            </p>
+
+            <div class="teatralidades-content">
+                <div class="teatro-text">
+                    <p>
+                        Ao longo de sua carreira, tem se dedicado não apenas como intérprete, mas também como
+                        dramaturgo, diretor musical e criador de trilhas sonoras que dialogam com as mais diversas
+                        linguagens cênicas.
+                    </p>
+
+                    <p>
+                        Suas participações em montagens como "Transe – Ato 1", "Gota D'água Preta" e "A Fuzarca dos
+                        Descalços" demonstram um compromisso artístico que vai além da performance, abraçando a
+                        responsabilidade de dar voz às narrativas marginalizadas e de questionar as estruturas sociais
+                        através da arte teatral.
+                    </p>
+
+                    <p>
+                        Como dramaturgo, Salloma desenvolve textos que entrelaçam a música, a poesia e a crítica social,
+                        criando espetáculos que funcionam como pontes entre o público e reflexões sobre identidade,
+                        resistência e memória coletiva. Sua obra teatral é um testemunho vivo da potência transformadora
+                        das artes cênicas.
+                    </p>
+                </div>
+
+                <div class="teatro-slideshow">
+                    <div class="slideshow-container">
+                        <div class="slide active" data-image="src/images/T01/1.jpg"></div>
+                        <div class="slide" data-image="src/images/T02/1.jpg"></div>
+                        <div class="slide" data-image="src/images/T03/1.jpg"></div>
+                        <div class="slide" data-image="src/images/T04/1.jpg"></div>
+                        <div class="slide" data-image="src/images/T05/1.jpg"></div>
+                    </div>
+
+                    <a href="teatralidades.html" class="saiba-mais-btn">
+                        <span>Saiba Mais</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <div class="contact-container">
+            <h2>Contato</h2>
+            <p>Para mais informações sobre shows, projetos e parcerias:</p>
+            <a href="mailto:aruandamundi4@gmail.com" class="email-link">
+                <i class="fas fa-envelope"></i>
+                aruandamundi4@gmail.com
+            </a>
+        </div>
+    </section>
+
+    <script src="src/javascript/index.js"></script>
+    <script src="src/javascript/navbar.js"></script>
+    <script src="src/javascript/loadnavbar.js"></script>
+</body>
+
+</html>

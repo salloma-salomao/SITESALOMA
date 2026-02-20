@@ -1,0 +1,585 @@
+/* CSS para a seção de discografia integrada ao site */
+/* Adicione este CSS ao final do seu arquivo content-sections.css */
+
+#discografia {
+    background-color: #f9f9f9;
+    padding: 80px 8%;
+    min-height: auto;
+}
+
+#discografia .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #8b4513;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+#discografia .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, rgba(160, 82, 45, 0.8), rgba(218, 165, 32, 0.8));
+    border-radius: 2px;
+}
+
+#discografia .section-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 800px;
+    line-height: 1.6;
+    color: #666;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Container principal da discografia */
+.discografia-player {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fdf5e6;
+    border-radius: 0px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Navegação entre álbuns */
+.album-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+    background: linear-gradient(135deg, #a0522d 0%, #8b4513 100%);
+    color: white;
+}
+
+.nav-arrow {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    border-radius: 0%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.nav-arrow:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.nav-arrow:disabled {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: not-allowed;
+    transform: none;
+    opacity: 0.5;
+}
+
+.album-info {
+    text-align: center;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.album-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fdf5e6;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.album-year {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+}
+
+/* Conteúdo principal */
+.discografia-content {
+    display: flex;
+    min-height: 600px;
+}
+
+/* Seção das faixas */
+.tracks-section {
+    flex: 1;
+    padding: 30px;
+    background: #fdf5e6;
+}
+
+.track-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.track-item {
+    margin-bottom: 15px;
+    border-radius: 0%;
+    overflow: hidden;
+    background: #fdf5e6;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.track-item:hover {
+    border-color: rgba(60, 50, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.track-header {
+    display: flex;
+    align-items: center;
+    padding: 18px 20px;
+    /* cursor: pointer; */
+    background: #fdf5e6;
+    transition: background-color 0.3s ease;
+}
+
+.track-header:hover {
+    background: #f8f8f8;
+}
+
+.track-number {
+    background: linear-gradient(135deg, #a0522d, #8b4513);
+    color: #fdf5e6;
+    border-radius: 0%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 18px;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(60, 50, 0, 0.3);
+}
+
+.track-info {
+    flex: 1;
+}
+
+.track-name {
+    font-weight: 600;
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.track-duration {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.track-toggle {
+    background: none;
+    border: none;
+    color: #8b4513;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.track-toggle:hover {
+    background: rgba(113, 0, 0, 0.1);
+    transform: scale(1.1);
+}
+
+/* Letras das músicas */
+.track-lyrics {
+    padding: 0 20px;
+    background: #fdf5e6;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.track-lyrics.active {
+    max-height: 500px;
+    padding: 25px 20px;
+}
+
+.lyrics-content {
+    background: white;
+    padding: 30px;
+    border-radius: 0px;
+    border-left: 4px solid #8b4513;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    position: relative;
+}
+
+.lyrics-content::before {
+    content: '"';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 3rem;
+    color: #8b4513;
+    opacity: 0.3;
+    font-family: serif;
+}
+
+.lyrics-text {
+    line-height: 1.9;
+    color: #444;
+    white-space: pre-line;
+    font-style: italic;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+/* Artwork do álbum */
+.album-artwork {
+    flex: 0 0 380px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #fdf5e6 0%, #ede5d6 100%);
+    border-left: 1px solid #e0e0e0;
+}
+
+.artwork-container {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.album-cover {
+    width: 300px;
+    height: 300px;
+    border-radius: 0px;
+    object-fit: cover;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 3px solid #fdf5e6;
+}
+
+.album-cover:hover {
+    transform: scale(1.03) rotate(1deg);
+}
+
+
+
+.album-details {
+    text-align: center;
+    color: #666;
+    line-height: 1.6;
+}
+
+.album-details p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Loading */
+.loading-spinner {
+    display: none;
+    text-align: center;
+    padding: 60px;
+    color: #8b4513;
+}
+
+.loading-spinner i {
+    margin-bottom: 15px;
+}
+
+/* Seção das faixas com altura fixa */
+.tracks-section {
+    flex: 1;
+    padding: 30px;
+    background: #fdf5e6;
+    max-height: 500px; /* Altura máxima fixa */
+    overflow-y: auto; /* Scroll vertical quando necessário */
+    overflow-x: hidden; /* Remove scroll horizontal */
+}
+
+/* Lista de faixas */
+.track-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 10px; /* Espaço para a barra de scroll */
+}
+
+/* Estilização customizada da barra de scroll */
+.tracks-section::-webkit-scrollbar {
+    width: 8px;
+}
+
+.tracks-section::-webkit-scrollbar-track {
+    background: #fdf5e6;
+    border-radius: 10px;
+}
+
+.tracks-section::-webkit-scrollbar-thumb {
+    background: #8b4513;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.tracks-section::-webkit-scrollbar-thumb:hover {
+    background: #7b3503;
+}
+
+/* Para Firefox */
+.tracks-section {
+    scrollbar-width: thin;
+    scrollbar-color: #a0522d #f1f1f1;
+}
+
+/* Ajuste do container principal para manter altura consistente */
+.discografia-content {
+    display: flex;
+    min-height: 500px; /* Altura fixa para manter consistência */
+    max-height: 550px; /* Evita crescimento excessivo */
+}
+
+/* Item da faixa mantém o estilo original */
+.track-item {
+    margin-bottom: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #deb887;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.track-item:hover {
+    border-color: rgba(60, 50, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+/* Responsividade para mobile */
+@media screen and (max-width: 768px) {
+    .tracks-section {
+        max-height: 400px; /* Altura menor em mobile */
+        padding: 25px 20px;
+    }
+    
+    .discografia-content {
+        flex-direction: column;
+        min-height: auto;
+        max-height: none;
+    }
+    
+    .track-list {
+        padding-right: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tracks-section {
+        max-height: 350px; /* Ainda menor em telas pequenas */
+        padding: 20px 15px;
+    }
+}
+/* CSS para o botão do Spotify */
+.streaming-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.spotify-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #1db954;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(29, 185, 84, 0.3);
+}
+
+.spotify-btn:hover {
+    background: #1ed760;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(29, 185, 84, 0.4);
+    color: white;
+}
+
+.spotify-btn i {
+    font-size: 1.2rem;
+}
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    .album-artwork {
+        flex: 0 0 320px;
+    }
+    
+    .album-cover {
+        width: 250px;
+        height: 250px;
+    }
+    
+}
+
+/* CSS para os botões de streaming */
+.streaming-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.spotify-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #1db954; /* Verde do Spotify */
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(29, 185, 84, 0.3);
+}
+
+.spotify-btn:hover {
+    background: #1ed760;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(29, 185, 84, 0.4);
+    color: white;
+}
+
+.youtube-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #ff0000; /* Vermelho do YouTube */
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+}
+
+.youtube-btn:hover {
+    background: #cc0000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+    color: white;
+}
+
+.spotify-btn i,
+.youtube-btn i {
+    font-size: 1.2rem;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .streaming-links {
+        margin-top: 15px;
+        gap: 8px;
+    }
+    
+    .spotify-btn,
+    .youtube-btn {
+        padding: 10px 18px;
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #discografia {
+        padding: 60px 5%;
+    }
+    
+    .discografia-content {
+        flex-direction: column;
+    }
+
+    .album-artwork {
+        flex: none;
+        padding: 30px 20px;
+        border-left: none;
+        border-top: 1px solid #fdf5e6;
+    }
+
+    .album-cover {
+        width: 320px;
+        height: 320px;
+    }
+
+    .album-navigation {
+        padding: 20px 25px;
+    }
+
+    .nav-arrow {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+
+    .album-title {
+        font-size: 1.6rem;
+    }
+
+    .tracks-section {
+        padding: 25px 20px;
+    }
+    
+    .track-header {
+        padding: 15px;
+    }
+    
+    .track-number {
+        width: 35px;
+        height: 35px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .album-navigation {
+        padding: 15px 20px;
+    }
+    
+    .album-title {
+        font-size: 1.4rem;
+    }
+    
+    .album-cover {
+        width: 180px;
+        height: 180px;
+    }
+    
+   
+    
+    .track-header {
+        padding: 12px 15px;
+    }
+    
+    .lyrics-content {
+        padding: 20px;
+    }
+}

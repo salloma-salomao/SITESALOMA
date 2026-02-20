@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/bibliografia.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Salloma Salomão - Bibliografia</title>
+</head>
+
+<body>
+
+    <!-- HEADER - src/components/navbar.html -->
+    <div id="navbar-placeholder"></div>
+    <div class="menu-overlay"></div>
+
+    <main id="content">
+        <section class="content-section" style="padding: 0;">
+            <div class="page-header">
+                <h1>Bibliografia</h1>
+                <p>Produção literária e acadêmica de Salloma Salomão: livros, ensaios, pesquisas e textos teatrais que
+                    exploram as culturas afro-brasileiras e a diáspora africana</p>
+            </div>
+
+            <div class="content-wrapper">
+                <!-- Filtros -->
+                <div class="filter-section">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-category="todos">
+                            <i class="fas fa-list"></i>
+                            Todos
+                        </button>
+                        <button class="filter-btn" data-category="musica">
+                            <i class="fas fa-music"></i>
+                            Música
+                        </button>
+                        <button class="filter-btn" data-category="literatura">
+                            <i class="fas fa-book"></i>
+                            Literatura
+                        </button>
+                        <button class="filter-btn" data-category="pesquisa">
+                            <i class="fas fa-graduation-cap"></i>
+                            Pesquisa
+                        </button>
+                        <button class="filter-btn" data-category="ensaio">
+                            <i class="fas fa-feather-alt"></i>
+                            Ensaio
+                        </button>
+                        <button class="filter-btn" data-category="teatro">
+                            <i class="fas fa-theater-masks"></i>
+                            Teatro
+                        </button>
+                        <button class="filter-btn" data-category="participacao">
+                            <i class="fas fa-users"></i>
+                            Participação
+                        </button>
+                    </div>
+                    <div class="results-count" id="results-count"></div>
+                </div>
+
+                <!-- Seção AUTOR -->
+                <div class="section-divider">
+                    <h2>Autor</h2>
+                    <p>Obras onde Salloma Salomão é o autor principal ou coautor</p>
+                </div>
+
+                <div class="bibliography-container" id="autor-container">
+                    <!-- As obras de autor serão inseridas aqui -->
+                </div>
+
+                <!-- Seção PARTICIPAÇÃO -->
+                <div class="section-divider">
+                    <h2>Participação</h2>
+                    <p>Obras em que Salloma Salomão colaborou como coautor ou contribuinte</p>
+                </div>
+
+                <div class="bibliography-container" id="participacao-container">
+                    <!-- As obras de participação serão inseridas aqui -->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato">
+            <div class="contact-container">
+                <h2>Contato</h2>
+                <p>Para mais informações sobre shows, projetos e parcerias:</p>
+                <a href="mailto:aruandamundi4@gmail.com" class="email-link">
+                    <i class="fas fa-envelope"></i>
+                    aruandamundi4@gmail.com
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/javascript/bibliografia.js"></script>
+    <script src="src/javascript/navbar.js"></script>
+    <script src="src/javascript/loadnavbar.js"></script>
+</body>
+
+</html>

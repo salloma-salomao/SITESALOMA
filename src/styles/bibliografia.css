@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fdf5e6;
+    line-height: 1.6;
+}
+
+/* CSS específico para a página de Bibliografia */
+main#content {
+    padding-top: 90px;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 60px 8%;
+    background: linear-gradient(135deg, #a0522d, #8b4513);
+    color: #fdf5e6;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+    opacity: 0.3;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.page-header p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.content-wrapper {
+    padding: 0 8%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Seções de Autor e Participação */
+.section-divider {
+    margin: 60px 0 40px 0;
+    text-align: center;
+}
+
+.section-divider h2 {
+    font-size: 2.2rem;
+    color: #a0522d;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.section-divider h2::before,
+.section-divider h2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #a0522d, #ffbb00);
+}
+
+.section-divider h2::before {
+    left: -100px;
+}
+
+.section-divider h2::after {
+    right: -100px;
+}
+
+.section-divider p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Filtros por categoria */
+.filter-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    background: #fdf5e6;
+    color: #8b4513;
+    border: 2px solid #a0522d;
+    padding: 12px 24px;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #a0522d;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(60, 50, 0, 0.3);
+}
+
+.filter-btn i {
+    font-size: 1rem;
+}
+
+.results-count {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Container das obras */
+.bibliography-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* Card de cada obra - CAIXAS QUADRADAS */
+.book-card {
+    background: #fed8a7;
+    border-radius: 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+    border: 1px solid #fdf5e6;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.book-header {
+    padding: 25px;
+    background: linear-gradient(135deg, #a0522d, #7b3503);
+    color: white;
+    position: relative;
+}
+
+.book-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    padding-right: 0;
+}
+
+/* Metadados com ícone colorido ao lado do ano */
+.book-metadata {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    flex-wrap: wrap;
+}
+
+.book-year {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+.book-year i {
+    color: #ffbb00;
+}
+
+/* Tipo com ícone colorido */
+.book-type {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* Cores específicas para cada categoria de ícone */
+.book-type .icon-musica {
+    color: #ff6b35;
+}
+
+.book-type .icon-literatura {
+    color: #4ecdc4;
+}
+
+.book-type .icon-pesquisa {
+    color: #45b7d1;
+}
+
+.book-type .icon-ensaio {
+    color: #96ceb4;
+}
+
+.book-type .icon-teatro {
+    color: #ffeaa7;
+}
+
+.book-type .icon-participacao {
+    color: #790c00;
+}
+
+.book-body {
+    padding: 25px;
+}
+
+.book-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.book-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: 0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-download {
+    background: #28a745;
+    color: white;
+}
+
+.btn-download:hover {
+    background: #218838;
+    transform: translateY(-2px);
+    color: white;
+}
+
+.btn-info {
+    background: #17a2b8;
+    color: white;
+}
+
+.btn-info:hover {
+    background: #138496;
+    transform: translateY(-2px);
+    color: white;
+}
+
+.btn-disabled {
+    background: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Seção de estatísticas */
+.stats-section {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 0;
+    padding: 40px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.stat-item {
+    background: white;
+    padding: 25px 15px;
+    border-radius: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-3px);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #a0522d;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* SEÇÃO CONTATO */
+#contato {
+    background: #deb887;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contato h2 {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+#contato p {
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.email-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background: #8b4513;
+    color: #fdf5e6;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.email-link:hover {
+    background: #7b3503;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(66, 60, 0, 0.3);
+    color: white;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    .bibliography-container {
+        grid-template-columns: 1fr;
+    }
+
+    .book-title {
+        font-size: 1.2rem;
+    }
+
+    .section-divider h2::before,
+    .section-divider h2::after {
+        width: 40px;
+    }
+
+    .section-divider h2::before {
+        left: -60px;
+    }
+
+    .section-divider h2::after {
+        right: -60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page-header {
+        padding: 40px 5%;
+    }
+
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .content-wrapper {
+        padding: 0 5%;
+    }
+
+    .filter-buttons {
+        gap: 10px;
+    }
+
+    .filter-btn {
+        padding: 10px 16px;
+        font-size: 0.8rem;
+    }
+
+    .book-header {
+        padding: 20px;
+    }
+
+    .book-body {
+        padding: 20px;
+    }
+
+    .book-title {
+        font-size: 1.1rem;
+    }
+
+    .book-metadata {
+        gap: 15px;
+    }
+
+    .book-actions {
+        flex-direction: column;
+    }
+
+    .action-btn {
+        justify-content: center;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .section-divider h2::before,
+    .section-divider h2::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .book-header {
+        padding: 15px;
+    }
+
+    .book-body {
+        padding: 15px;
+    }
+
+    .book-title {
+        font-size: 1rem;
+    }
+
+    .book-metadata {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-divider h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.book-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.book-card:nth-child(even) {
+    animation-delay: 0.1s;
+}
+
+.book-card:nth-child(odd) {
+    animation-delay: 0.2s;
+}
