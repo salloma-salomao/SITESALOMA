@@ -3,6 +3,101 @@
     // Dados dos álbuns de Salloma Salomão
     const discografiaData = [
         {
+            title: "Ancestres de Primavera II - Salloma Salomão e Sincrônica Al Andaluz",
+            year: " EP 2025",
+            cover: "src/images/albums/D20.jpg",
+            youtubeLink: "https://www.youtube.com/watch?v=xtZGqYbrYK8&list=OLAK5uy_mofhsv8cmTaoKA7SZYdulm_rIMzu6dluQ",
+            tracks: [
+                {
+                    number: 1,
+                    name: "Coisa de Ascender N2 - Salloma Salomão e Sincrônica Al Andaluz",
+                    duration: "04:24",
+                    lyrics: ""
+                },
+
+                {
+                    number: 2,
+                    name: "Linhas Abertas para Melodias Entrecruzadas - Salloma Salomão e Sincrônica Al Andaluz",
+                    duration: "09:21",
+                    lyrics: ""
+                },
+
+                {
+                    number: 3,
+                    name: "Pizindin - Salloma Salomão e Sincrônica Al Andaluz",
+                    duration: "04:39",
+                    lyrics: ""
+                },
+
+
+                {
+                    number: 4,
+                    name: "Divindades da Dança - Salloma Salomão e Sincrônica Al Andaluz",
+                    duration: "03:32",
+                    lyrics: ""
+                },
+
+                {
+                    number: 5,
+                    name: "Orixalá - Salloma Salomão e Sincrônica Al Andaluz",
+                    duration: "2:58",
+                    lyrics: ""
+                }
+
+            ]
+        },
+        {
+            title: "Águas Nascentes - Analu Cristina e Salloma Salomão (Single)",
+            year: "2025",
+            cover: "src/images/albums/D19.jpg",
+            spotifyLink: "https://open.spotify.com/intl-pt/album/2rauawqRHsZwQCXTEfJz1Z?si=bUxSqgBbTA-p4R3wMT9O9g", // Substitua pelo link real
+            tracks: [
+                {
+                    number: 1,
+                    name: "Águas Nascentes - Analu Cristina e Salloma Salomão",
+                    duration: "03:51",
+                    lyrics: ""
+                },
+            ]
+        },
+        {
+            title: "Asas Negras - Salloma Salomão e Amailton Azevedo",
+            year: " EP 2024",
+            cover: "src/images/albums/D16.jpg",
+            spotifyLink: "https://open.spotify.com/album/06g5hkKXvSAtESaTuKpdTE?si=Pc44GPbGSMWuaeNqz4H1EA",
+            tracks: [
+                {
+                    number: 1,
+                    name: "Asas Negras - Salloma Salomão e Amailton Azevedo ",
+                    duration: "04:33",
+                    lyrics: ""
+                },
+
+                {
+                    number: 2,
+                    name: "Flor de Oxumaré - Salloma Salomão e Amailton Azevedo ",
+                    duration: "05:45",
+                    lyrics: ""
+                },
+
+                {
+                    number: 3,
+                    name: "Zambi e a Serpente do Tempo - Salloma Salomão e Amailton Azevedo ",
+                    duration: "04:07",
+                    lyrics: ""
+                },
+
+
+                {
+                    number: 4,
+                    name: "Zanzibar - Salloma Salomão e Amailton Azevedo ",
+                    duration: "03:32",
+                    lyrics: ""
+                },
+
+            ]
+        },
+        {
             title: "Luanda Mana Lua",
             year: "2024",
             cover: "src/images/albums/D01.jpg",
@@ -106,6 +201,174 @@
                     duration: "02:09",
                     lyrics: ""
                 }
+            ]
+        },
+        {
+            title: "Notas Tortas da Madrugada (Ao Vivo)",
+            year: "2024",
+            cover: "src/images/albums/D06.jpg",
+            spotifyLink: "https://open.spotify.com/album/4dyqDUUr68BAx7cDQZnXiM?si=78UU_VqSSvOTOIdTXwUh8w", // Substitua pelo link real
+            tracks: [
+                {
+                    number: 1,
+                    name: "Homens Sujos de Sangue",
+                    duration: "02:25",
+                    lyrics: ""
+                },
+                {
+                    number: 2,
+                    name: "Por que Verter a Noite?",
+                    duration: "02:29",
+                    lyrics: ""
+                },
+                {
+                    number: 3,
+                    name: "Adjutório",
+                    duration: "03:04",
+                    lyrics: ""
+                },
+                {
+                    number: 4,
+                    name: "Alta Madrugada",
+                    duration: "04:28",
+                    lyrics: ""
+                },
+                {
+                    number: 5,
+                    name: "Indecifrável Curso",
+                    duration: "03:01",
+                    lyrics: ""
+                },
+                {
+                    number: 6,
+                    name: "Advento da Paixão",
+                    duration: "04:30",
+                    lyrics: ""
+                },
+                {
+                    number: 7,
+                    name: "Notas Tortas da Madrugada",
+                    duration: "04:56",
+                    lyrics: ""
+                },
+                {
+                    number: 8,
+                    name: "O Dia das Tribos",
+                    duration: "03:29",
+                    lyrics: ""
+                },
+                {
+                    number: 9,
+                    name: "Tudo Bem Você Tem Razão",
+                    duration: "02:48",
+                    lyrics: ""
+                },
+                {
+                    number: 10,
+                    name: "Kiequitidanatelha",
+                    duration: "01:58",
+                    lyrics: ""
+                },
+                {
+                    number: 11,
+                    name: "Arcaico Engenho Moderno",
+                    duration: "03:11",
+                    lyrics: ""
+                },
+                {
+                    number: 12,
+                    name: "Há Possibilidade de Sonho",
+                    duration: "03:17",
+                    lyrics: ""
+                },
+                {
+                    number: 13,
+                    name: "1º de Maio",
+                    duration: "04:30",
+                    lyrics: ""
+                },
+                {
+                    number: 14,
+                    name: "Baile Soul",
+                    duration: "03:39",
+                    lyrics: ""
+                }
+            ]
+        },
+        {
+            title: "Descendente - (Single)",
+            year: " EP 2023",
+            cover: "src/images/albums/D18.jpg",
+            spotifyLink: "https://open.spotify.com/intl-pt/track/1G2KXlsktI1892h2zZLza4?si=32b4182da58143d2",
+            tracks: [
+                {
+                    number: 1,
+                    name: "Nganga José Cabinda (Matheus Pezzotta, Marina Rosa, Selma Fernands, João Bid, Edson Daísa, Saloma Salomão) ",
+                    duration: "05:37",
+                    lyrics: ""
+                },
+            ]
+        },
+        {
+            title: "Vó Geralda - O Conto Cantado das Incontáveis Histórias - Salloma Salomão e Alan Zas - (Single)",
+            year: " SINGLE 2023",
+            cover: "src/images/albums/D12.jpg",
+            spotifyLink: "https://open.spotify.com/album/71zjCFoziyR9Vh3PHn5PAA?si=i4u9sNYvT6eYwGjX8EtJUQ", // Substitua pelo link real
+            tracks: [
+                {
+                    number: 1,
+                    name: "Vó Geralda - O Conto Cantado das Incontáveis Histórias - Salloma Salomão e  Alan Zas) ",
+                    duration: "03:31",
+                    lyrics: ""
+                },
+
+            ]
+        },
+        {
+            title: "Empretecer - Analu Cristina e Salloma Salomão - (Single)",
+            year: " SINGLE 2023",
+            cover: "src/images/albums/D15.jpg",
+            spotifyLink: "https://open.spotify.com/album/48SRVweDpETGK6k0sMKkDQ?si=MtUh7DNETeuQo0QvyiUiaQ",
+            tracks: [
+                {
+                    number: 1,
+                    name: "Empretecer - Analu Cristina e Salloma Salomão ",
+                    duration: "03:14",
+                    lyrics: ""
+                },
+            ]
+        },
+        {
+            title: "Ancestres de Primavera",
+            year: "2023",
+            cover: "src/images/albums/D10.jpg",
+            spotifyLink: "https://open.spotify.com/intl-pt/album/4knUjRUuxcMojmjPHEieVU?si=mtVEGTtzRgOWgqqYpB8Mqw",
+            tracks: [
+                {
+                    number: 1,
+                    name: "Lyra Ceciliana / Agreste Periférico ",
+                    duration: "04:14",
+                    lyrics: ""
+                },
+                {
+                    number: 2,
+                    name: "Muzambinhos (feat. Sincrônica Al Andaluz & Fabiana Cozza)",
+                    duration: "04:21",
+                    lyrics: ""
+                },
+                {
+                    number: 3,
+                    name: "Congos de Ouro (feat. Sincrônica Al Andaluz)",
+                    duration: "01:16",
+                    lyrics: ""
+                },
+                {
+                    number: 4,
+                    name: "Oração",
+                    duration: "02:30",
+                    lyrics: ""
+                },
+
             ]
         },
         {
@@ -326,98 +589,6 @@
                     number: 11,
                     name: "Dance Até Quando Não Puder Mais",
                     duration: "02:15",
-                    lyrics: ""
-                }
-            ]
-        },
-        {
-            title: "Notas Tortas da Madrugada (Ao Vivo)",
-            year: "2024",
-            cover: "src/images/albums/D06.jpg",
-            spotifyLink: "https://open.spotify.com/album/4dyqDUUr68BAx7cDQZnXiM?si=78UU_VqSSvOTOIdTXwUh8w", // Substitua pelo link real
-            tracks: [
-                {
-                    number: 1,
-                    name: "Homens Sujos de Sangue",
-                    duration: "02:25",
-                    lyrics: ""
-                },
-                {
-                    number: 2,
-                    name: "Por que Verter a Noite?",
-                    duration: "02:29",
-                    lyrics: ""
-                },
-                {
-                    number: 3,
-                    name: "Adjutório",
-                    duration: "03:04",
-                    lyrics: ""
-                },
-                {
-                    number: 4,
-                    name: "Alta Madrugada",
-                    duration: "04:28",
-                    lyrics: ""
-                },
-                {
-                    number: 5,
-                    name: "Indecifrável Curso",
-                    duration: "03:01",
-                    lyrics: ""
-                },
-                {
-                    number: 6,
-                    name: "Advento da Paixão",
-                    duration: "04:30",
-                    lyrics: ""
-                },
-                {
-                    number: 7,
-                    name: "Notas Tortas da Madrugada",
-                    duration: "04:56",
-                    lyrics: ""
-                },
-                {
-                    number: 8,
-                    name: "O Dia das Tribos",
-                    duration: "03:29",
-                    lyrics: ""
-                },
-                {
-                    number: 9,
-                    name: "Tudo Bem Você Tem Razão",
-                    duration: "02:48",
-                    lyrics: ""
-                },
-                {
-                    number: 10,
-                    name: "Kiequitidanatelha",
-                    duration: "01:58",
-                    lyrics: ""
-                },
-                {
-                    number: 11,
-                    name: "Arcaico Engenho Moderno",
-                    duration: "03:11",
-                    lyrics: ""
-                },
-                {
-                    number: 12,
-                    name: "Há Possibilidade de Sonho",
-                    duration: "03:17",
-                    lyrics: ""
-                },
-                {
-                    number: 13,
-                    name: "1º de Maio",
-                    duration: "04:30",
-                    lyrics: ""
-                },
-                {
-                    number: 14,
-                    name: "Baile Soul",
-                    duration: "03:39",
                     lyrics: ""
                 }
             ]
@@ -743,39 +914,6 @@
             ]
         },
         {
-            title: "Ancestres de Primavera",
-            year: "2023",
-            cover: "src/images/albums/D10.jpg",
-            spotifyLink: "https://open.spotify.com/intl-pt/album/4knUjRUuxcMojmjPHEieVU?si=mtVEGTtzRgOWgqqYpB8Mqw",
-            tracks: [
-                {
-                    number: 1,
-                    name: "Lyra Ceciliana / Agreste Periférico ",
-                    duration: "04:14",
-                    lyrics: ""
-                },
-                {
-                    number: 2,
-                    name: "Muzambinhos (feat. Sincrônica Al Andaluz & Fabiana Cozza)",
-                    duration: "04:21",
-                    lyrics: ""
-                },
-                {
-                    number: 3,
-                    name: "Congos de Ouro (feat. Sincrônica Al Andaluz)",
-                    duration: "01:16",
-                    lyrics: ""
-                },
-                {
-                    number: 4,
-                    name: "Oração",
-                    duration: "02:30",
-                    lyrics: ""
-                },
-
-            ]
-        },
-        {
             title: "Afrorigem",
             year: "1998",
             cover: "src/images/albums/D11.jpg",
@@ -868,146 +1006,6 @@
 
             ]
         },
-        {
-            title: "Asas Negras - Salloma Salomão e Amailton Azevedo",
-            year: " EP 2024",
-            cover: "src/images/albums/D16.jpg",
-            spotifyLink: "https://open.spotify.com/album/06g5hkKXvSAtESaTuKpdTE?si=Pc44GPbGSMWuaeNqz4H1EA",
-            tracks: [
-                {
-                    number: 1,
-                    name: "Asas Negras - Salloma Salomão e Amailton Azevedo ",
-                    duration: "04:33",
-                    lyrics: ""
-                },
-
-                {
-                    number: 2,
-                    name: "Flor de Oxumaré - Salloma Salomão e Amailton Azevedo ",
-                    duration: "05:45",
-                    lyrics: ""
-                },
-
-                {
-                    number: 3,
-                    name: "Zambi e a Serpente do Tempo - Salloma Salomão e Amailton Azevedo ",
-                    duration: "04:07",
-                    lyrics: ""
-                },
-
-
-                {
-                    number: 4,
-                    name: "Zanzibar - Salloma Salomão e Amailton Azevedo ",
-                    duration: "03:32",
-                    lyrics: ""
-                },
-
-            ]
-        },
-        {
-            title: "Ancestres de Primavera II - Salloma Salomão e Sincrônica Al Andaluz",
-            year: " EP 2025",
-            cover: "src/images/albums/D20.jpg",
-            youtubeLink: "https://www.youtube.com/watch?v=xtZGqYbrYK8&list=OLAK5uy_mofhsv8cmTaoKA7SZYdulm_rIMzu6dluQ",
-            tracks: [
-                {
-                    number: 1,
-                    name: "Coisa de Ascender N2 - Salloma Salomão e Sincrônica Al Andaluz",
-                    duration: "04:24",
-                    lyrics: ""
-                },
-
-                {
-                    number: 2,
-                    name: "Linhas Abertas para Melodias Entrecruzadas - Salloma Salomão e Sincrônica Al Andaluz",
-                    duration: "09:21",
-                    lyrics: ""
-                },
-
-                {
-                    number: 3,
-                    name: "Pizindin - Salloma Salomão e Sincrônica Al Andaluz",
-                    duration: "04:39",
-                    lyrics: ""
-                },
-
-
-                {
-                    number: 4,
-                    name: "Divindades da Dança - Salloma Salomão e Sincrônica Al Andaluz",
-                    duration: "03:32",
-                    lyrics: ""
-                },
-
-                {
-                    number: 5,
-                    name: "Orixalá - Salloma Salomão e Sincrônica Al Andaluz",
-                    duration: "2:58",
-                    lyrics: ""
-                }
-
-            ]
-        },
-        {
-            title: "Vó Geralda - O Conto Cantado das Incontáveis Histórias - Salloma Salomão e Alan Zas - (Single)",
-            year: " SINGLE 2023",
-            cover: "src/images/albums/D12.jpg",
-            spotifyLink: "https://open.spotify.com/album/71zjCFoziyR9Vh3PHn5PAA?si=i4u9sNYvT6eYwGjX8EtJUQ", // Substitua pelo link real
-            tracks: [
-                {
-                    number: 1,
-                    name: "Vó Geralda - O Conto Cantado das Incontáveis Histórias - Salloma Salomão e  Alan Zas) ",
-                    duration: "03:31",
-                    lyrics: ""
-                },
-
-            ]
-        },
-        {
-            title: "Empretecer - Analu Cristina e Salloma Salomão - (Single)",
-            year: " SINGLE 2023",
-            cover: "src/images/albums/D15.jpg",
-            spotifyLink: "https://open.spotify.com/album/48SRVweDpETGK6k0sMKkDQ?si=MtUh7DNETeuQo0QvyiUiaQ",
-            tracks: [
-                {
-                    number: 1,
-                    name: "Empretecer - Analu Cristina e Salloma Salomão ",
-                    duration: "03:14",
-                    lyrics: ""
-                },
-            ]
-        },
-        {
-            title: "Águas Nascentes - Analu Cristina e Salloma Salomão (Single)",
-            year: "2025",
-            cover: "src/images/albums/D19.jpg",
-            spotifyLink: "https://open.spotify.com/intl-pt/album/2rauawqRHsZwQCXTEfJz1Z?si=bUxSqgBbTA-p4R3wMT9O9g", // Substitua pelo link real
-            tracks: [
-                {
-                    number: 1,
-                    name: "Águas Nascentes - Analu Cristina e Salloma Salomão",
-                    duration: "03:51",
-                    lyrics: ""
-                },
-            ]
-        },
-
-        {
-            title: "Descendente - (Single)",
-            year: " EP 2023",
-            cover: "src/images/albums/D18.jpg",
-            spotifyLink: "https://open.spotify.com/intl-pt/track/1G2KXlsktI1892h2zZLza4?si=32b4182da58143d2",
-            tracks: [
-                {
-                    number: 1,
-                    name: "Nganga José Cabinda (Matheus Pezzotta, Marina Rosa, Selma Fernands, João Bid, Edson Daísa, Saloma Salomão) ",
-                    duration: "05:37",
-                    lyrics: ""
-                },
-            ]
-        },
-
 
         // FUNCIONA, É SÓ ADICIONAR MAIS UM QUE ELE APARECE AUTOMATICAMENTE NO SITE
         // {
@@ -1024,7 +1022,6 @@
         //         },
         //     ]
         // }
-
 
     ];
 

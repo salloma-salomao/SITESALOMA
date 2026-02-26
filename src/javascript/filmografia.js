@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
             codigo: "F03",
             titulo: "Negro em Mim",
             ano: "2021",
-            poster: "src/images/F03/1.jpg",
+            poster: "src/images/F03/1.JPG",
             duracao: "111 minutos",
             classificacao: "16 anos",
             genero: "Documentário",

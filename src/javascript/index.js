@@ -63,7 +63,7 @@ const timelineData = [
     {
         year: 1992,
         description: "Produção do documentário “Educação: O Caminho para a liberdade. Projeto de Alfabetização de Adultos no Jardim Lucélia- Grajaú. SP. Direção de Salloma Salomão, Fantasma Filmes e ABVP. Disponível no Youtube",
-        image: "src/images/timeline/1992.jpg"
+        image: "src/images/timeline/1992.JPG"
     },
     {
         year: 1995,
@@ -98,17 +98,17 @@ const timelineData = [
     {
         year: 2003,
         description: "Exposição de Instrumentos Musicais de Artesania, apresentada nas unidades do SESC Vila Mariana e SESC Santo André, destacando saberes e sonoridades ancestrais. Nesse mesmo período, participou do Festival de Música Étnica no SESC Santo André e teve publicada sua entrevista com o professor Boubacar Barry, referência nos estudos sobre a diáspora africana. Na dramaturgia, foi reconhecido com o Prêmio Ruth de Souza de Dramaturgia Negra pela obra \"Memórias Sonoras da Noite\". Viagem para França a encontro de Satranga de Lima. Na foto, colaborou com a Banda Tribbu no videoclipe da música \"Templo\", de Chico César, sob direção de Jean Lopes.",
-        image: "src/images/timeline/2003.jpg"
+        image: "src/images/timeline/2003.JPG"
     },
     {
         year: 2004,
         description: "Pesquisador Visitante no Instituto de Ciências Sociais da Universidade de Lisboa e viagem à França.",
-        image: "src/images/timeline/2004.jpg"
+        image: "src/images/timeline/2004.JPG"
     },
     {
         year: 2005,
         description: "Defesa de Doutorado Memórias sonoras da noite: Musicalidades Africanas no Brasil Oitocentista pela Pontifícia Universidade Católica de São Paulo",
-        image: "src/images/timeline/2005.jpg"
+        image: "src/images/timeline/2005.JPG"
     },
     {
         year: 2006,
@@ -118,17 +118,17 @@ const timelineData = [
     {
         year: 2007,
         description: "Show de Lançamento do álbum Faces da Tarde de um mesmo Sentimento, no Sesc Ipiranga",
-        image: "src/images/timeline/2007.jpg"
+        image: "src/images/timeline/2007.JPG"
     },
     {
         year: 2010,
         description: "Show M’Banzo do Futuro no Centro Cultural Mestre Assis (Largo 21 de Abril, 29), como parte da programação do Mês da Consciência Negra na cidade de Embu das Artes.",
-        image: "src/images/timeline/2010.jpg"
+        image: "src/images/timeline/2010.JPG"
     },
     {
         year: 2011,
         description: "Lançamento do DVD: Salloma Salomão: 30 anos de musicalidade e negritude. Originalmente gravado em VHs entre 1992 e 2008. Documentário feito às próprias custas de produção. Edição de Ivan Lino (Skovinha Miliano). Produção: Aruanda Mundi e Max Design. Disponível no Youtube.",
-        image: "src/images/timeline/2011.jpg"
+        image: "src/images/timeline/2011.JPG"
     },
     {
         year: 2012,
@@ -148,12 +148,12 @@ const timelineData = [
     {
         year: 2018,
         description: "Foto: Alex Ribeiro - Em 2018, participou como depoente, entrevistado e colaborador na série de TV 13 Canções para Falar de Samba, com direção de Pedro Arantes e produção da Glaz Entretenimento, exibida posteriormente pela Cine Brasil TV em 2019. No mesmo ano, integrou a peça-show Agosto na Cidade Murada, com direção de Jé Oliveira e Mariana Souto Maior, produção de Rudá Malik e direção musical de Carlos Massingue, produzido pela Aruanda Mundi.",
-        image: "src/images/timeline/2018.jpg"
+        image: "src/images/timeline/2018.JPG"
     },
     {
         year: 2019,
         description: "InauguraFoto: Sérgio Silva/Ponte Jornalismo - Em 2019, Salloma integrou o elenco de dois espetáculos teatrais: Gota D’água Preta, com direção de Jé Oliveira e A Fuzarca dos Descalços, idealizado por Eder dos Anjos. Ainda em 2019, esteve em Três Miltons, projeto com direção de Jé Oliveira e Salloma Salomão, Ivan Lino (Skovinha Miliano), e Capulanas, Clarianas, Núcleo Zonautônoma, Al Andalus e Deodara, apresentado no Instituto Itaú Cultural e no Auditório Oscar Niemeyer, no Parque Ibirapuera, em São Paulo, além de contar com versão em vídeo documentário. Atuou ainda como depoente, entrevistado e colaborador no documentário Dentro da Minha Pele, de Val Gomes e Toni Venturi, com distribuição da O2 Play. Por fim, compôs o elenco de Jair Rodrigues: Deixe que digam, dirigido por Rubens Rewald.",
-        image: "src/images/timeline/2019.jpg"
+        image: "src/images/timeline/2019.JPG"
     },
     {
         year: 2020,
@@ -163,7 +163,7 @@ const timelineData = [
     {
         year: 2021,
         description: "Recebe o Troféu Kikito de Ouro, Prêmio de Melhor Trilha Musical no Festival Internacional de Cinema de Gramado, pelo trabalho em “Todos Mortos” de Gotardo e Dutra, coprodução franco-brasileira. Ainda no campo audiovisual, atuou no elenco do Filme Negro em mim (Direção Macca Ramos). Ainda nesse ano é convidado a participar da Mesa 6 do ciclo de encontros “1922: Mordernismos em debate” organizado pelo instituto Moreira Salles. No campo literário explora o universo infantil no seu livro “As aventuras do pequeno samba” lançado pela sua produtora Aruanda Mundi. Participação no quadro #CanjicaHistórica Vissungos e Afrobrasilidades produzido pelo Sesc Campo Limpo",
-        image: "src/images/timeline/2021.jpg"
+        image: "src/images/timeline/2021.JPG"
     },
     {
         year: 2022,
@@ -188,12 +188,12 @@ const timelineData = [
     {
         year: 2026,
         description: "O álbum Vozes Vissungueiras (2025/2026) é um ato de resistência cultural que resgata e ressignifica os vissungos — cantos ancestrais de origem Banto dos garimpos mineiros. Sob direção musical de Salloma Salomão, o projeto une a tradição à contemporaneidade nas vozes de Juçara Marçal, Tiganá Santana, Sérgio Pererê e do mestre Enilson Viríssimo, preservando a memória afro-brasileira contra o apagamento histórico. Ilustração_por Silvana Martins_Estúdio Aruêra",
-        image: "src/images/timeline/2026.jpg"
+        image: "src/images/timeline/2026 (1).jpeg"
     },
     {
         year: 2026,
         description: "Lançamento do livro Hip Hop e o novo mundo preto paulistano com Amailton Azevedo. Prefácio  @eduardobrecho_ . Os exemplares estão disponíveis na loja @petroleomusic . Foto: @daisy_aserena",
-        image: "src/images/timeline/2026 (1).jpeg"
+        image: "src/images/timeline/2026.JPG"
     }
 ];
 
