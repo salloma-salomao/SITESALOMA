@@ -1,7 +1,7 @@
 // Dados das teatralidades
 const teatralidadesData = [
     { codigo: 'T01', quantidadeFotos: 7 },
-    { codigo: 'T02', quantidadeFotos: 9 },
+    { codigo: 'T02', quantidadeFotos: 8 },
     { codigo: 'T03', quantidadeFotos: 5 },
     { codigo: 'T04', quantidadeFotos: 6 },
     { codigo: 'T05', quantidadeFotos: 4 },
