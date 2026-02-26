@@ -5,7 +5,7 @@
         {
             title: "Ancestres de Primavera II - Salloma Salomão e Sincrônica Al Andaluz",
             year: " EP 2025",
-            cover: "src/images/albums/D20.jpg",
+            cover: "src/images/albums/D20.JPG",
             youtubeLink: "https://www.youtube.com/watch?v=xtZGqYbrYK8&list=OLAK5uy_mofhsv8cmTaoKA7SZYdulm_rIMzu6dluQ",
             tracks: [
                 {
@@ -49,7 +49,7 @@
         {
             title: "Águas Nascentes - Analu Cristina e Salloma Salomão (Single)",
             year: "2025",
-            cover: "src/images/albums/D19.jpg",
+            cover: "src/images/albums/D19.JPG",
             spotifyLink: "https://open.spotify.com/intl-pt/album/2rauawqRHsZwQCXTEfJz1Z?si=bUxSqgBbTA-p4R3wMT9O9g", // Substitua pelo link real
             tracks: [
                 {
@@ -63,7 +63,7 @@
         {
             title: "Asas Negras - Salloma Salomão e Amailton Azevedo",
             year: " EP 2024",
-            cover: "src/images/albums/D16.jpg",
+            cover: "src/images/albums/D16.JPG",
             spotifyLink: "https://open.spotify.com/album/06g5hkKXvSAtESaTuKpdTE?si=Pc44GPbGSMWuaeNqz4H1EA",
             tracks: [
                 {
@@ -312,7 +312,7 @@
         {
             title: "Vó Geralda - O Conto Cantado das Incontáveis Histórias - Salloma Salomão e Alan Zas - (Single)",
             year: " SINGLE 2023",
-            cover: "src/images/albums/D12.jpg",
+            cover: "src/images/albums/D12.JPG",
             spotifyLink: "https://open.spotify.com/album/71zjCFoziyR9Vh3PHn5PAA?si=i4u9sNYvT6eYwGjX8EtJUQ", // Substitua pelo link real
             tracks: [
                 {
@@ -916,7 +916,7 @@
         {
             title: "Afrorigem",
             year: "1998",
-            cover: "src/images/albums/D11.jpg",
+            cover: "src/images/albums/D11.JPG",
             youtubeLink: "https://www.youtube.com/watch?v=alJQwly5v_c&list=RDalJQwly5v_c&start_radio=1",// Substitua pelo link real
             tracks: [
                 {
