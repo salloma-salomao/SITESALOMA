@@ -197,6 +197,9 @@ const timelineData = [
     }
 ];
 
+// Slides destaques
+
+
 
 // Timeline spiral generation (funcionalidade completa restaurada)
 function generateSpiral() {
@@ -342,6 +345,7 @@ function scrollToContact() {
     }
 }
 
+// Teatralidades
 document.addEventListener('DOMContentLoaded', function () {
     const slides = document.querySelectorAll('#teatralidades .slide');
     const indicators = document.querySelectorAll('#teatralidades .indicator');
