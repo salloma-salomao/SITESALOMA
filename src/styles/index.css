@@ -144,8 +144,37 @@ body {
 
 .destaque-container {
     position: relative;
-    display: flex;
+    display: grid;
     align-items: center;
+    min-height: 450px;
+}
+
+.seta {
+    position: absolute;
+    top: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 30px;
+    transition: 0.3s;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.seta:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.anterior { 
+    left: 0;
+    transform: translateX(-120%);
+}
+
+.proximo { 
+    right: 0;
+    transform: translateX(120%);
 }
 
 .destaque {
@@ -153,6 +182,7 @@ body {
     display: none;
     box-shadow: 0 4px 10px rgba(66, 45, 30, 0.8);
     transition: all 0.3s ease;
+    opacity: 0;
 }
 
 .destaque:hover {
@@ -163,6 +193,7 @@ body {
 
 .destaque.ativo {
     display: flex;
+    opacity: 1;
 }
 
 .destaque-imagem {
@@ -175,7 +206,7 @@ body {
 }
 
 .destaque-imagem img {
-    width: 300px;
+    width: 450px;
     height: 450px;
     object-fit: cover;
     object-position: center;

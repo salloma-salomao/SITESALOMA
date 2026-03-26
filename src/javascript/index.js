@@ -199,7 +199,44 @@ const timelineData = [
 
 // Slides destaques
 
+let slideIndex = 0;
+const slides = document.querySelectorAll('.destaque');
+const tempoTransicao = 5000;
+let autoSlide;
 
+iniciarTimer();
+
+function mostraSlide(n) {
+    slides.forEach(slide => slide.classList.remove('ativo'));
+
+    slideIndex += n;
+
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;
+    }
+
+    if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
+    }
+
+    slides[slideIndex].classList.add('ativo');
+}
+
+function mudarSlide(n) {
+    mostrarSlide(n);
+    resetarTimer();
+}
+
+function iniciarTimer() {
+    autoSlide = setInterval(() => {
+        mostraSlide(1);
+    }, tempoTransicao);
+}
+
+function resetarTimer() {
+    clearInterval(autoSlide);
+    iniciarTimer();
+}
 
 // Timeline spiral generation (funcionalidade completa restaurada)
 function generateSpiral() {
