@@ -178,22 +178,26 @@ body {
 }
 
 .destaque {
+    grid-area: 1 / 1;
     background-color: #8b4513;
-    display: none;
+    display: flex;
     box-shadow: 0 4px 10px rgba(66, 45, 30, 0.8);
     transition: all 0.3s ease;
     opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8 ease, transform 0.3 ease;
 }
 
 .destaque:hover {
     background-color: #9b5523;
-    transform: translateY(-4px);
+    transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(113, 90, 65, 0.4);
 }
 
 .destaque.ativo {
-    display: flex;
     opacity: 1;
+    visibility: visible;
+    z-index: 1;
 }
 
 .destaque-imagem {
@@ -214,7 +218,6 @@ body {
 }
 
 .destaque-texto {
-    /* background-color: #8b4513; */
     color: #fff;
     padding: 10px;
     text-align: justify;
@@ -226,6 +229,22 @@ body {
     width: fit-content;
     margin: 0 auto;
     padding-bottom: 15px;
+}
+
+.destaque-saiba-mais {
+    /* position: ; */
+    padding: 6px;
+    margin: 15px 0;
+    width: 100%;
+    /* margin-left: auto; */
+    border: none;
+    background-color: #daa520;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.destaque-saiba-mais:hover {
+    background-color: #eab530;
 }
 
 /* SEÇÃO VÍDEO E AGENDA */
@@ -918,6 +937,13 @@ body {
     } */
 }
 
+@media screen and (max-width: 1024px) {
+    .destaque {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 930px) {
     .biotraj-grid {
         grid-template-columns: 1fr;
@@ -930,6 +956,11 @@ body {
     .section-title {
         margin-bottom: 20px;
     }
+
+    /* .destaque {
+        display: flex;
+        flex-direction: column;
+    } */
 
     .section-paragraph {
         padding-bottom: 20px;
