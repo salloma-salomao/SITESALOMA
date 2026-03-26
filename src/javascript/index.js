@@ -223,7 +223,7 @@ function mostraSlide(n) {
 }
 
 function mudarSlide(n) {
-    mostrarSlide(n);
+    mostraSlide(n);
     resetarTimer();
 }
 
