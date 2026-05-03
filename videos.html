@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="src/styles/navbar.css">
+    <link rel="stylesheet" href="src/styles/videos.css">
+    <title>Salloma Salomão - Vídeos</title>
+</head>
+
+<body>
+    <!-- HEADER - src/components/navbar.html -->
+    <div id="navbar-placeholder"></div>
+    <div class="menu-overlay"></div>
+
+    <main id="content">
+        <section id="content-section" style="padding: 0;">
+            <div class="page-header">
+                <h1>Vídeos e Gravações</h1>
+                <p>Fotos e memórias, acervo de Salloma Salomão</p>
+            </div>
+
+            <section class="video-section">
+                <h2 class="video-title">Título do Vídeo</h2>
+
+                <div class="video-content">
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Gl8ZwB7ui9g?si=6sjG-jSOaH3qNVJz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="video-text">
+                        <p>
+                            Aqui vai o texto descritivo do vídeo. Pode falar sobre o contexto,
+                            o evento, detalhes técnicos ou qualquer coisa relevante.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <div id="lightbox" class="lightbox hidden">
+            <img src="" alt="">
+        </div>
+
+    </main>
+
+    <section id="contato">
+        <div class="contact-container">
+            <h2>Contato</h2>
+            <p>Para mais informações sobre shows, projetos e parcerias:</p>
+            <a href="mailto:aruandamundi4@gmail.com" class="email-link">
+                <i class="fas fa-envelope"></i>
+                aruandamundi4@gmail.com
+            </a>
+        </div>
+    </section>
+
+    <script src="src/javascript/videos.js"></script>
+    <script src="src/javascript/navbar.js"></script>
+    <script src="src/javascript/loadnavbar.js"></script>
+</body>
+
+</html>
