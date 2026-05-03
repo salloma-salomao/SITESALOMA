@@ -1,52 +1,54 @@
 body {
-  background: #111;
-  color: white;
+  background: #fdf5e6;
   font-family: sans-serif;
 }
 
 main#content {
-    padding-top: 90px;
-    padding-bottom: 30px;
+  padding-top: 90px;
+  padding-bottom: 30px;
 }
 
 /* HEADER */
 .page-header {
-    text-align: center;
-    margin-bottom: 40px;
-    padding: 60px 8%;
-    background: linear-gradient(135deg, #a0522d, #8b4513);
-    color: #fdf5e6;
-    position: relative;
-    overflow: hidden;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 60px 8%;
+  background: linear-gradient(135deg, #a0522d, #8b4513);
+  color: #fdf5e6;
+  position: relative;
+  overflow: hidden;
 }
 
 .page-header h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    position: relative;
-    z-index: 2;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
 }
 
 .page-header p {
-    font-size: 1.3rem;
-    opacity: 0.9;
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
+  font-size: 1.3rem;
+  opacity: 0.9;
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 /* VIDEO SECTION */
 .video-section {
-  max-width: 850px;
+  max-width: 1000px;
   margin: 60px auto;
-  padding: 0 20px;
+  padding: 20px 20px;
+  background-color: #deb887;
+  border-radius: 10px;
 }
 
 .video-title {
   margin-bottom: 20px;
   font-size: 24px;
+  text-align: center;
 }
 
 /* layout lado a lado */
@@ -72,53 +74,54 @@ main#content {
 .video-text {
   flex: 1;
   line-height: 1.6;
+  text-align: justify;
 }
 
 /* SEÇÃO CONTATO */
 #contato {
-    background: #deb887;
-    padding: 80px 5%;
-    text-align: center;
+  background: #deb887;
+  padding: 80px 5%;
+  text-align: center;
 }
 
 .contact-container {
-    max-width: 600px;
-    margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 #contato h2 {
-    font-size: 2.5rem;
-    color: #000;
-    margin-bottom: 20px;
-    font-weight: 300;
-    letter-spacing: -1px;
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 20px;
+  font-weight: 300;
+  letter-spacing: -1px;
 }
 
 #contato p {
-    font-size: 1.2rem;
-    color: #222;
-    margin-bottom: 30px;
-    font-weight: 300;
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 30px;
+  font-weight: 300;
 }
 
 .email-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 15px;
-    background: #8b4513;
-    color: #fdf5e6;
-    padding: 20px 30px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 400;
-    transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  background: #8b4513;
+  color: #fdf5e6;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 400;
+  transition: all 0.3s ease;
 }
 
 .email-link:hover {
-    background: #7b3503;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(66, 60, 0, 0.3);
-    color: white;
+  background: #7b3503;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(66, 60, 0, 0.3);
+  color: white;
 }
 
 /* 📱 RESPONSIVIDADE */
@@ -139,9 +142,9 @@ main#content {
 }
 
 @media screen and (max-width: 768px) {
-    .timeline-container {
+  .timeline-container {
     display: grid;
     grid-template-columns: auto;
     gap: 40px;
-}
+  }
 }
