@@ -65,15 +65,23 @@ main#content {
 .envelope-galeria {
     width: 100%;
     max-width: 850px;
-    margin: 5px auto;
+    margin: 25px auto 5px auto;
     background-color: #fed8a7;
+}
+
+/* Título Galeria */
+.titulo-galeria {
+    color: #000;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
 }
 
 /* Galeria */
 .gallery {
   width: 100%;
   max-width: 800px;
-  margin: 40px auto 5px auto;
+  margin: 0px auto 15px auto;
   position: relative;
   padding-top: 20px;
 }
@@ -116,14 +124,6 @@ main#content {
 
 .nav:hover {
   background: rgba(255,255,255,0.2);
-}
-
-/* Título Galeria */
-.titulo-galeria {
-    color: #000;
-    width: 100%;
-    text-align: center;
-    font-size: 26px;
 }
 
 /* Texto Galeria */
