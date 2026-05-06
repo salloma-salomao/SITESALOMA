@@ -72,6 +72,31 @@ body {
     z-index: 2;
 }
 
+.fotografo_page {
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    z-index: 3;
+    background-color: rgba(255,255,255,0.2);
+    padding: 6px 15px 35px 12px;
+    border-top-right-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+}
+
+.fotografo_page span {
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.fotografo_page:hover {
+    transform: translateY(-10px);
+    color: rgba(0, 0, 0, 0.78);
+    background-color:  rgba(255,255,255,0.5);
+}
+
 .social-media {
     position: absolute;
     top: 50%;
