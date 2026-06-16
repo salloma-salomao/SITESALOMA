@@ -42,7 +42,8 @@ main#content {
   margin: 60px auto;
   padding: 20px 20px;
   background-color: #deb887;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
 }
 
 .video-title {
@@ -54,8 +55,25 @@ main#content {
 /* layout lado a lado */
 .video-content {
   display: flex;
-  gap: 30px;
+  flex-direction: row;
+  gap: 15px;
   align-items: flex-start;
+  margin: 20px auto;
+}
+
+/* video instagram */
+/* Força o conteúdo do instagram a ocupar espaço e respeitar o lado a lado */
+.video-instagram {
+  flex: 2;
+  max-width: 1050px;
+  width: 100%;
+}
+
+/* Obriga o iframe gerado pelo Instagram a preencher o espaço correto */
+.video-instagram iframe {
+  width: 100% !important;
+  min-width: 100% !important;
+  max-height: 700px;
 }
 
 /* vídeo responsivo (mantém proporção) */
@@ -147,4 +165,11 @@ main#content {
     grid-template-columns: auto;
     gap: 40px;
   }
+
+  .video-instagram iframe {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-height: 600px;
+  }
+
 }
